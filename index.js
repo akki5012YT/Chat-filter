@@ -4062,7 +4062,7 @@ app.post('/webhook', (req, res) => {
     lastActiveRoomId = roomId; 
     const body = ev.body || "";
     const senderId = ev.account_id.toString();
-    if (senderId === 11535456) return;
+    if (senderId === BOT_ACCOUNT_ID) return;
     const today = getTodayStr();
 
     (async () => {
